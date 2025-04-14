@@ -1,47 +1,88 @@
 nav {
-    display: flex;
-    flex-direction: row;
     background:  #150300;
-    font-size:x-large;
-}
-@media screen and (max-width: 900px) {
-    nav {
-        flex-direction: column;
-    }
+    padding: 10px;
 }
 
-@media screen and (max-width: 900px) {
-    nav ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
-}
-nav p {
-    display: flex;
-    text-align: center;
-    color: #D0C27D;
-    font-size:300%
-}
-
-nav ul{
-    display: flex;
+ul li {
     list-style: none;
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.Brand,ul {
+    display: inline;
+}
+
+ul{
+    float:right;
     margin: 0;
-    padding: 0;
-    gap: 70px;
 }
 
-h1 {
-    display: flex;
-    font-size:300%
+ul li {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-footer {
-       width: 100%;
-       padding: 12px 20px;
-       margin: 8px 0;
-       display: inline-block;
-       box-sizing: border-box;
-       list-style: none;
+.Brand {
+    margin-left: 5px;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+.Active {
+    text-decoration: underline !important;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 5%;
+  }
+
+p {
+    word-wrap: break-word;
+}
+
+h1{
+    font-size: 300%;
+    color: rgb(235, 152, 28);
+}
+h2 {
+    font-size: 500%;
+}
+
+p {font-size: x-large;}
+
+.column li {
+    list-style: none;
+    display: inline;
+}
+
+.column a {
+    text-decoration: none;
+    color: rgb(235, 152, 28);
+    font-size: 300%;
+}
+
+.column .story {
+    width: 435;
+    height: 315;
+    top: 145px;
+    left: 550px;
+    border-radius: 14px;
 }
 
