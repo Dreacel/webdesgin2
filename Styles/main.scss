@@ -1,0 +1,81 @@
+@use './Partials/colors';
+@use './Partials/fonts';
+@use './Vendor/normalize';
+
+ul {
+    float:right;
+    margin: 0;
+    li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+nav {
+    background: colors.$dark-bg;
+    padding: 10px;
+    display: inline;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.Brand {
+    margin-left: 5px;
+    font-size: x-large;
+    text-decoration: underline;
+    display: inline;
+}
+
+.Active {
+    text-decoration: underline !important;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding-top: 15px;
+    p {
+        word-wrap: break-word;
+        font-size: x-large;
+    }
+    h1{
+        font-size: 300%;
+        color: colors.$secondary-font-color;
+    }
+    h2 {
+        font-size: 500%;
+    }
+    li{
+        list-style: none;
+        display: inline; 
+    }
+    a{
+        text-decoration: none;
+        color: colors.$secondary-font-color;
+        font-size: 300%;}
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 5%;
+}
+
+.story {
+    width: 435;
+    height: 315;
+}
+
+footer {
+    background: colors.$dark-bg;
+
+    color: white;
+    
+}
+
+  
+  
